@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# displays fizz, buzz or fizzbuzz based on numbers
+for (( i=1; i<=100; i++))
+do
+	if (( i % 3 == 0 ))
+	then
+		if (( i % 5 == 0 ))
+		then
+			echo "FizzBuzz"
+		fi
+	elif (( i % 3 == 0 ))
+	then
+		echo "Fizz"
+	elif (( i % 5 == 0 ))
+	then
+		echo "Buzz"
+	else
+		echo "$i"
+	fi
+done
