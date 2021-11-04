@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# displays the visitors IP along with apache_log files
+
+awk 
