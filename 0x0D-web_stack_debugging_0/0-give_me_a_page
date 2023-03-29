@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 # Lets make run Apache
 
-docker run -p 8080:80 -d -it holbertonschool/265-0
 sudo service apache2 start
