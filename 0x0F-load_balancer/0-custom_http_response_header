@@ -7,6 +7,7 @@ sudo apt-get -y install nginx
 ufw allow 'Nginx HTTP'
 mkdir -p /var/www/html /var/www/error
 sudo chmod -R 755 /var/www
+sudo chmod -R 755 /var/www/html
 sudo chmod -R 755 /etc/nginx/sites-enabled/default
 sudo chmod -R 755 /var/www/error
 echo 'Hello World!' > /var/www/html/index.html
