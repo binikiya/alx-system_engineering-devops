@@ -5,7 +5,7 @@ from requests import get
 
 
 def count_words(subreddit, word_list, after=None, match_dict={}):
-    """Queries the Reddit API and returns the count of words"""
+    """Queries Reddit API and returns the count of words"""
     try:
         r = get('https://www.reddit.com/r/{}/hot.json?limit=100&&'
                 'after={}'.format(subreddit, after),
